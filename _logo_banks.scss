@@ -1,0 +1,171 @@
+//<img class="bank-icon scb">
+//<img class="bank-icon kbank">
+
+.bank-icon{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	margin-right: 2px;
+}
+
+@mixin logo_banks($bg, $img){
+	background-color: $bg; background-image: url($img.svg);
+}
+
+.bank-icon.bbl {@include logo_banks(#1e4598,bbl);}
+
+/* , "official_name": "BANGKOK BANK PUBLIC COMPANY LTD.", "nice_name": "Bangkok Bank"  */
+//.bank-icon.bbl    { 
+//	background-color: #1e4598;
+//	background-image: url(bank_icons/bbl.svg);
+//#}
+/* , "official_name": "KASIKORNBANK PUBLIC COMPANY LTD.", "nice_name": "Kasikornbank"  */
+.bank-icon.kbank  { 
+	background-color: #138f2d;
+	background-image: url(bank_icons/kbank.svg);
+}
+/* , "official_name": "THE ROYAL BANK OF SCOTLAND PLC", "nice_name": "Royal Bank of Scotland"  */
+.bank-icon.rbs    { 
+	background-color: #032952;
+	background-image: url(bank_icons/rbs.svg);
+}
+/* , "official_name": "KRUNG THAI BANK PUBLIC COMPANY LTD.", "nice_name": "Krungthai Bank"  */
+.bank-icon.ktb    { 
+	background-color: #1ba5e1;
+	background-image: url(bank_icons/ktb.svg);
+}
+/* , "official_name": "JPMORGAN CHASE BANK, NATIONAL ASSOCIATION", "nice_name": "J.P. Morgan"  */
+.bank-icon.jpm    { 
+	background-color: #321c10;
+	background-image: url(bank_icons/jpm.svg);
+}
+/* , "official_name": "THE BANK OF TOKYO-MITSUBISHI UFJ, LTD.", "nice_name": "Bank of Tokyo-Mitsubishi UFJ"  */
+.bank-icon.mufg   { 
+	background-color: #d61323;
+	background-image: url(bank_icons/mufg.svg);
+}
+/* , "official_name": "TMB BANK PUBLIC COMPANY LIMITED.", "nice_name": "TMB Bank"  */
+.bank-icon.tmb    { 
+	background-color: #1279be;
+	background-image: url(bank_icons/tmb.svg);
+}
+/* , "official_name": "SIAM COMMERCIAL BANK PUBLIC COMPANY LTD.", "nice_name": "Siam Commercial Bank"  */
+.bank-icon.scb    { 
+	background-color: #4e2e7f;
+	background-image: url(bank_icons/scb.svg);
+}
+/* , "official_name": "CITIBANK, N.A.", "nice_name": "Citibank"  */
+.bank-icon.citi   { 
+	background-color: #1583c7;
+	background-image: url(bank_icons/citi.svg);
+}
+/* , "official_name": "SUMITOMO MITSUI BANKING CORPORATION", "nice_name": "Sumitomo Mitsui Banking Corporation"  */
+.bank-icon.smbc   { 
+	background-color: #a0d235;
+	background-image: url(bank_icons/smbc.svg);
+}
+/* , "official_name": "STANDARD CHARTERED BANK (THAI) PUBLIC COMPANY LIMITED", "nice_name": "Standard Chartered (Thai)"  */
+.bank-icon.sc     { 
+	background-color: #0f6ea1;
+	background-image: url(bank_icons/sc.svg);
+}
+/* , "official_name": "CIMB THAI BANK PUPBLIC COMPANY LTD.", "nice_name": "CIMB Thai Bank"  */
+.bank-icon.cimb   { 
+	background-color: #7e2f36;
+	background-image: url(bank_icons/cimb.svg);
+}
+/* , "official_name": "UNITED OVERSEAS BANK (THAI) PUBLIC COMPANY LIMITED", "nice_name": "United Overseas Bank (Thai)"  */
+.bank-icon.uob    { 
+	background-color: #0b3979;
+	background-image: url(bank_icons/uob.svg);
+}
+/* , "official_name": "BANK OF AYUDHYA PUBLIC COMPANY LTD.", "nice_name": "Bank of Ayudhya (Krungsri)"  */
+.bank-icon.bay    { 
+	background-color: #fec43b;
+	background-image: url(bank_icons/bay.svg);
+}
+/* , "official_name": "MEGA INTERNATIONAL COMMERCIAL BANK PUBLIC COMPANY LIMITED", "nice_name": "Mega International Commercial Bank"  */
+.bank-icon.mega   { 
+	background-color: #815e3b;
+	background-image: url(bank_icons/mega.svg);
+}
+/* , "official_name": "BANK OF AMERICA, NATIONAL ASSOCIATION", "nice_name": "Bank of America"  */
+.bank-icon.boa    { 
+	background-color: #e11e3c;
+	background-image: url(bank_icons/boa.svg);
+}
+/* , "official_name": "CREDIT AGRICOLE CORPORATE AND INVESTMENT BANK", "nice_name": "Crédit Agricole"  */
+.bank-icon.cacib  { 
+	background-color: #0e765b;
+	background-image: url(bank_icons/cacib.svg);
+}
+/* , "official_name": "THE GOVERNMENT SAVINGS BANK", "nice_name": "Government Savings Bank"  */
+.bank-icon.gsb    { 
+	background-color: #eb198d;
+	background-image: url(bank_icons/gsb.svg);
+}
+/* , "official_name": "THE HONGKONG AND SHANGHAI BANKING CORPORATION LTD.", "nice_name": "Hongkong and Shanghai Banking Corporation"  */
+.bank-icon.hsbc   { 
+	background-color: #fd0d1b;
+	background-image: url(bank_icons/hsbc.svg);
+}
+/* , "official_name": "DEUTSCHE BANK AG.", "nice_name": "Deutsche Bank"  */
+.bank-icon.db     { 
+	background-color: #0522a5;
+	background-image: url(bank_icons/db.svg);
+}
+/* , "official_name": "THE GOVERNMENT HOUSING BANK", "nice_name": "Government Housing Bank"  */
+.bank-icon.ghb    { 
+	background-color: #f57d23;
+	background-image: url(bank_icons/ghb.svg);
+}
+/* , "official_name": "BANK FOR AGRICULTURE AND AGRICULTURAL COOPERATIVES", "nice_name": "Bank for Agriculture and Agricultural Cooperatives"  */
+.bank-icon.baac   { 
+	background-color: #4b9b1d;
+	background-image: url(bank_icons/baac.svg);
+}
+/* , "official_name": "MIZUHO BANK, LTD.", "nice_name": "Mizuho Bank"  */
+.bank-icon.mb     { 
+	background-color: #150b78;
+	background-image: url(bank_icons/mb.svg);
+}
+/* , "official_name": "BNP PARIBAS", "nice_name": "BNP Paribas"  */
+.bank-icon.bnp    { 
+	background-color: #14925e;
+	background-image: url(bank_icons/bnp.svg);
+}
+/* , "official_name": "THANACHART BANK PUBLIC COMPANY LTD.", "nice_name": "Thanachart Bank"  */
+.bank-icon.tbank  { 
+	background-color: #fc4f1f;
+	background-image: url(bank_icons/tbank.svg);
+}
+/* , "official_name": "ISLAMIC BANK OF THAILAND", "nice_name": "Islamic Bank of Thailand"  */
+.bank-icon.ibank  { 
+	background-color: #184615;
+	background-image: url(bank_icons/ibank.svg);
+}
+/* , "official_name": "TISCO BANK PUBLIC COMPANY LIMITED", "nice_name": "Tisco Bank"  */
+.bank-icon.tisco  { 
+	background-color: #12549f;
+	background-image: url(bank_icons/tisco.svg);
+}
+/* , "official_name": "KIATNAKIN BANK PUBLIC COMPANY LIMITED", "nice_name": "Kiatnakin Bank"  */
+.bank-icon.kk     { 
+	background-color: #199cc5;
+	background-image: url(bank_icons/kk.svg);
+}
+/* , "official_name": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (THAI) PUBLIC COMPANY LIMITED", "nice_name": "Industrial and Commercial Bank of China (Thai)"  */
+.bank-icon.icbc   { 
+	background-color: #c50f1c;
+	background-image: url(bank_icons/icbc.svg);
+}
+/* , "official_name": "THE THAI CREDIT RETAIL BANK PUBLIC COMPANY LIMITED", "nice_name": "Thai Credit Retail Bank"  */
+.bank-icon.tcrb   { 
+	background-color: #0a4ab3;
+	background-image: url(bank_icons/tcrb.svg);
+}
+/* , "official_name": "LAND AND HOUSES BANK PUBLIC COMPANY LIMITED", "nice_name": "Land and Houses Bank" */
+.bank-icon.lhb    { 
+	background-color: #6d6e71;
+	background-image: url(bank_icons/lhb.svg);
+}
