@@ -2,170 +2,123 @@
 //<img class="bank-icon kbank">
 
 .bank-icon{
-	width: 20px;
-	height: 20px;
-	display: inline-block;
-	margin-right: 2px;
+	//width: 20px;
+	//height: 20px;
+	//display: inline-block;
+	//margin-right: 2px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+@mixin _logo_banks($bg, $img){
+	background-color: $bg; background-image: url(../../img/logo-banks/th/#{$img}.svg);
+}
+@mixin _logo_banks_bg($bg, $img){
+	$val: 255;
+	padding: 1em;
+	background-color: $bg; background-size: 80% 80%; background-repeat: no-repeat;
+	background-position: center;
+	background-image: 
+        linear-gradient(to bottom, rgba($val,$val, $val, .85), rgba($val,$val,$val, .85)), 
+        url(../../img/logo-banks/th/#{$img}.svg);
 }
 
 @mixin logo_banks($bg, $img){
-	background-color: $bg; background-image: url($img.svg);
+	.bank-icon.#{$img} {@include _logo_banks($bg,$img);}
+	.bank-icon-bg.#{$img} {@include _logo_banks_bg($bg,$img)};
 }
-
-.bank-icon.bbl {@include logo_banks(#1e4598,bbl);}
 
 /* , "official_name": "BANGKOK BANK PUBLIC COMPANY LTD.", "nice_name": "Bangkok Bank"  */
-//.bank-icon.bbl    { 
-//	background-color: #1e4598;
-//	background-image: url(bank_icons/bbl.svg);
-//#}
+@include logo_banks(#1e4598,bbl);
+
 /* , "official_name": "KASIKORNBANK PUBLIC COMPANY LTD.", "nice_name": "Kasikornbank"  */
-.bank-icon.kbank  { 
-	background-color: #138f2d;
-	background-image: url(bank_icons/kbank.svg);
-}
+@include logo_banks(#138f2d,kbank);
+
 /* , "official_name": "THE ROYAL BANK OF SCOTLAND PLC", "nice_name": "Royal Bank of Scotland"  */
-.bank-icon.rbs    { 
-	background-color: #032952;
-	background-image: url(bank_icons/rbs.svg);
-}
+////.bank-icon.rbs    {@include logo_banks(#032952,rbs);
+//}
 /* , "official_name": "KRUNG THAI BANK PUBLIC COMPANY LTD.", "nice_name": "Krungthai Bank"  */
-.bank-icon.ktb    { 
-	background-color: #1ba5e1;
-	background-image: url(bank_icons/ktb.svg);
-}
+//.bank-icon.ktb    {@include logo_banks(#1ba5e1,ktb);
+//}
 /* , "official_name": "JPMORGAN CHASE BANK, NATIONAL ASSOCIATION", "nice_name": "J.P. Morgan"  */
-.bank-icon.jpm    { 
-	background-color: #321c10;
-	background-image: url(bank_icons/jpm.svg);
-}
+//.bank-icon.jpm    {@include logo_banks(#321c10,jpm);
+//}
 /* , "official_name": "THE BANK OF TOKYO-MITSUBISHI UFJ, LTD.", "nice_name": "Bank of Tokyo-Mitsubishi UFJ"  */
-.bank-icon.mufg   { 
-	background-color: #d61323;
-	background-image: url(bank_icons/mufg.svg);
-}
+//.bank-icon.mufg   {@include logo_banks(#d61323,mufg);
+//}
 /* , "official_name": "TMB BANK PUBLIC COMPANY LIMITED.", "nice_name": "TMB Bank"  */
-.bank-icon.tmb    { 
-	background-color: #1279be;
-	background-image: url(bank_icons/tmb.svg);
-}
+//.bank-icon.tmb    {@include logo_banks(#1279be,tmb);
+//}
 /* , "official_name": "SIAM COMMERCIAL BANK PUBLIC COMPANY LTD.", "nice_name": "Siam Commercial Bank"  */
-.bank-icon.scb    { 
-	background-color: #4e2e7f;
-	background-image: url(bank_icons/scb.svg);
-}
+//.bank-icon.scb    {@include logo_banks(#4e2e7f,scb);
+//}
 /* , "official_name": "CITIBANK, N.A.", "nice_name": "Citibank"  */
-.bank-icon.citi   { 
-	background-color: #1583c7;
-	background-image: url(bank_icons/citi.svg);
-}
+//.bank-icon.citi   {@include logo_banks(#1583c7,citi);
+//}
 /* , "official_name": "SUMITOMO MITSUI BANKING CORPORATION", "nice_name": "Sumitomo Mitsui Banking Corporation"  */
-.bank-icon.smbc   { 
-	background-color: #a0d235;
-	background-image: url(bank_icons/smbc.svg);
-}
+//.bank-icon.smbc   {@include logo_banks(#a0d235,smbc);
+//}
 /* , "official_name": "STANDARD CHARTERED BANK (THAI) PUBLIC COMPANY LIMITED", "nice_name": "Standard Chartered (Thai)"  */
-.bank-icon.sc     { 
-	background-color: #0f6ea1;
-	background-image: url(bank_icons/sc.svg);
-}
+//.bank-icon.sc     {@include logo_banks(#0f6ea1,sc);
+//}
 /* , "official_name": "CIMB THAI BANK PUPBLIC COMPANY LTD.", "nice_name": "CIMB Thai Bank"  */
-.bank-icon.cimb   { 
-	background-color: #7e2f36;
-	background-image: url(bank_icons/cimb.svg);
-}
+//.bank-icon.cimb   {@include logo_banks(#7e2f36,cimb);
+//}
 /* , "official_name": "UNITED OVERSEAS BANK (THAI) PUBLIC COMPANY LIMITED", "nice_name": "United Overseas Bank (Thai)"  */
-.bank-icon.uob    { 
-	background-color: #0b3979;
-	background-image: url(bank_icons/uob.svg);
-}
+//.bank-icon.uob    {@include logo_banks(#0b3979,uob);
+//}
 /* , "official_name": "BANK OF AYUDHYA PUBLIC COMPANY LTD.", "nice_name": "Bank of Ayudhya (Krungsri)"  */
-.bank-icon.bay    { 
-	background-color: #fec43b;
-	background-image: url(bank_icons/bay.svg);
-}
+//.bank-icon.bay    {@include logo_banks(#fec43b,bay);
+//}
 /* , "official_name": "MEGA INTERNATIONAL COMMERCIAL BANK PUBLIC COMPANY LIMITED", "nice_name": "Mega International Commercial Bank"  */
-.bank-icon.mega   { 
-	background-color: #815e3b;
-	background-image: url(bank_icons/mega.svg);
-}
+//.bank-icon.mega   {@include logo_banks(#815e3b,mega);
+//}
 /* , "official_name": "BANK OF AMERICA, NATIONAL ASSOCIATION", "nice_name": "Bank of America"  */
-.bank-icon.boa    { 
-	background-color: #e11e3c;
-	background-image: url(bank_icons/boa.svg);
-}
+//.bank-icon.boa    {@include logo_banks(#e11e3c,boa);
+//}
 /* , "official_name": "CREDIT AGRICOLE CORPORATE AND INVESTMENT BANK", "nice_name": "Crédit Agricole"  */
-.bank-icon.cacib  { 
-	background-color: #0e765b;
-	background-image: url(bank_icons/cacib.svg);
-}
+//.bank-icon.cacib  {@include logo_banks(#0e765b,cacib);
+//}
 /* , "official_name": "THE GOVERNMENT SAVINGS BANK", "nice_name": "Government Savings Bank"  */
-.bank-icon.gsb    { 
-	background-color: #eb198d;
-	background-image: url(bank_icons/gsb.svg);
-}
+//.bank-icon.gsb    {@include logo_banks(#eb198d,gsb);
+//}
 /* , "official_name": "THE HONGKONG AND SHANGHAI BANKING CORPORATION LTD.", "nice_name": "Hongkong and Shanghai Banking Corporation"  */
-.bank-icon.hsbc   { 
-	background-color: #fd0d1b;
-	background-image: url(bank_icons/hsbc.svg);
-}
+//.bank-icon.hsbc   {@include logo_banks(#fd0d1b,hsbc);
+//}
 /* , "official_name": "DEUTSCHE BANK AG.", "nice_name": "Deutsche Bank"  */
-.bank-icon.db     { 
-	background-color: #0522a5;
-	background-image: url(bank_icons/db.svg);
-}
+//.bank-icon.db     {@include logo_banks(#0522a5,db);
+//}
 /* , "official_name": "THE GOVERNMENT HOUSING BANK", "nice_name": "Government Housing Bank"  */
-.bank-icon.ghb    { 
-	background-color: #f57d23;
-	background-image: url(bank_icons/ghb.svg);
-}
+//.bank-icon.ghb    {@include logo_banks(#f57d23,ghb);
+//}
 /* , "official_name": "BANK FOR AGRICULTURE AND AGRICULTURAL COOPERATIVES", "nice_name": "Bank for Agriculture and Agricultural Cooperatives"  */
-.bank-icon.baac   { 
-	background-color: #4b9b1d;
-	background-image: url(bank_icons/baac.svg);
-}
+//.bank-icon.baac   {@include logo_banks(#4b9b1d,baac);
+//}
 /* , "official_name": "MIZUHO BANK, LTD.", "nice_name": "Mizuho Bank"  */
-.bank-icon.mb     { 
-	background-color: #150b78;
-	background-image: url(bank_icons/mb.svg);
-}
+//.bank-icon.mb     {@include logo_banks(#150b78,mb);
+//}
 /* , "official_name": "BNP PARIBAS", "nice_name": "BNP Paribas"  */
-.bank-icon.bnp    { 
-	background-color: #14925e;
-	background-image: url(bank_icons/bnp.svg);
-}
+//.bank-icon.bnp    {@include logo_banks(#14925e,bnp);
+//}
 /* , "official_name": "THANACHART BANK PUBLIC COMPANY LTD.", "nice_name": "Thanachart Bank"  */
-.bank-icon.tbank  { 
-	background-color: #fc4f1f;
-	background-image: url(bank_icons/tbank.svg);
-}
+//.bank-icon.tbank  {@include logo_banks(#fc4f1f,tbank);
+//}
 /* , "official_name": "ISLAMIC BANK OF THAILAND", "nice_name": "Islamic Bank of Thailand"  */
-.bank-icon.ibank  { 
-	background-color: #184615;
-	background-image: url(bank_icons/ibank.svg);
-}
+//.bank-icon.ibank  {@include logo_banks(#184615,ibank);
+//}
 /* , "official_name": "TISCO BANK PUBLIC COMPANY LIMITED", "nice_name": "Tisco Bank"  */
-.bank-icon.tisco  { 
-	background-color: #12549f;
-	background-image: url(bank_icons/tisco.svg);
-}
+//.bank-icon.tisco  {@include logo_banks(#12549f,tisco);
+//}
 /* , "official_name": "KIATNAKIN BANK PUBLIC COMPANY LIMITED", "nice_name": "Kiatnakin Bank"  */
-.bank-icon.kk     { 
-	background-color: #199cc5;
-	background-image: url(bank_icons/kk.svg);
-}
+//.bank-icon.kk     {@include logo_banks(#199cc5,kk);
+//}
 /* , "official_name": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (THAI) PUBLIC COMPANY LIMITED", "nice_name": "Industrial and Commercial Bank of China (Thai)"  */
-.bank-icon.icbc   { 
-	background-color: #c50f1c;
-	background-image: url(bank_icons/icbc.svg);
-}
+//.bank-icon.icbc   {@include logo_banks(#c50f1c,icbc);
+//}
 /* , "official_name": "THE THAI CREDIT RETAIL BANK PUBLIC COMPANY LIMITED", "nice_name": "Thai Credit Retail Bank"  */
-.bank-icon.tcrb   { 
-	background-color: #0a4ab3;
-	background-image: url(bank_icons/tcrb.svg);
-}
+//.bank-icon.tcrb   {@include logo_banks(#0a4ab3,tcrb);
+//}
 /* , "official_name": "LAND AND HOUSES BANK PUBLIC COMPANY LIMITED", "nice_name": "Land and Houses Bank" */
-.bank-icon.lhb    { 
-	background-color: #6d6e71;
-	background-image: url(bank_icons/lhb.svg);
-}
+//.bank-icon.lhb    {@include logo_banks(#6d6e71,lhb);
+//}
