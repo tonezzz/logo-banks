@@ -1,0 +1,2 @@
+#https://github.com/tonezzz/logo-banks
+git submodule add https://github.com/tonezzz/logo-banks wordpress/wp-content/plugins/gizmo/_sys/img/logo-banks
